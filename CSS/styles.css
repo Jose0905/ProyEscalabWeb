@@ -1,0 +1,376 @@
+:root{
+    --red:#f05454;
+    --black:#000000;
+    --blue:#a6f6f1;
+    --white:#eaeaea;
+    --flour: #049e9e; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+/** Menu de navegacion**/
+
+#header{
+    position: relative;
+    width: 100%;
+}
+
+.menu{
+    position:  fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    background: var(--black);
+    transition: all 0.4s linear;
+}
+
+.menu .logo-box{
+    margin-left: 20px;
+}
+.menu .logo-box .Logotipo{
+    padding-top: 10px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.menu .list-container .lists{
+    display: flex;
+    padding-right: 50px;
+}
+.menu .list-container .lists li{
+    list-style: none;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+    color: var(--white);
+    border-radius: 24px;
+    font-size: 16px;
+}
+.menu .list-container .lists li a:hover{
+    color: var(--flour);
+    border-bottom: solid 3px var(--flour);
+}
+
+/*img - header*/
+
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/imgs/party.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-header .welcome{
+    text-align: center;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h1{
+    margin-top: 60px;
+    font-size: 50px;
+    color: #ffff;
+    font-weight: 200;
+
+}
+.img-header .welcome h3{
+    font-size: 30px;
+    color: #ffff;
+    font-weight: 200;
+}
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+.img-header .welcome p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+.img-header .welcome  button{
+    width: 350px;
+    height: 40px;
+    background: none;
+    border-radius: 24px;
+    border: solid 3px;
+    outline: none;
+    font-size: 22px;
+    color: var(--white);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img-header .welcome  button a{
+    color: white;
+    text-decoration: none;
+}
+.img-header .welcome > button:hover{
+    border: none;
+    background: var(--flour);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1)
+
+}
+
+
+/* acerca de nosotros*/
+
+.acerca-de{
+    width: 100%;
+    padding: 90px;
+    background: var(--black);
+}
+.acerca-de h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.acerca-de .container-nosotros{
+    width: 80%;
+    margin: auto;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+}
+.acerca-de .container-nosotros p{
+    text-align: center;
+    font-size: 17px;
+    color: var(--white);
+    margin: 10px 0px;
+}
+
+.acerca-de .container-nosotros .img-nosotros{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.acerca-de .container-nosotros .img-nosotros img{
+    width: 100%;
+    object-fit: cover;
+    margin: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow:hidden;
+    transition: 0.8s;
+}
+.acerca-de .icontainer-nosotros .img-nosotros img:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1)
+}
+.acerca-de .boton-leer_mas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.acerca-de .boton-leer_mas button{
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    background: none;
+    border-radius: 24px;
+    border: solid 3px;
+    outline: none;
+    font-size: 22px;
+    color: var(--white);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.acerca-de  .boton-leer_mas button:hover{
+    border: none;
+    background: var(--flour);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1)
+
+}
+.acerca-de  .boton-leer_mas #ocultar{
+    display: none;
+}
+/*Nuestros proyectos*/
+
+.our-project{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/imgs/mojito.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+.our-project .deg-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.753);
+}
+.our-project .ejeZproject{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.our-project .container-project{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+.our-project .container-project .project-title{
+    border: 2px solid var(--white);
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.our-project .container-project .project-title h2{
+    font-size: 40px;
+    color: var(--white);
+    font-weight: normal;
+}
+.our-project .container-project .project-title hr{
+    background: var(--white);
+    width: 50%;
+    margin: 10px auto;
+}
+.our-project .container-project .project-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+.our-project .container-project .project-img img{
+    width: calc(30% - 10px);
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow:hidden;
+}
+.our-project .container-project .project-img img:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1)
+}
+/*testimonios*/
+
+.testimonios{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/imgs/mojito.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonios .deg-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.671);
+}
+.testimonios .testimonios-title{
+    font-size: 25px;
+    position: relative;
+    color: white;
+    margin: 30px;
+}
+.testimonios .box-testimonios{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.testimonios .box-testimonios .card-testimonio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    padding: 10px;
+    background-color: rgba(48, 0, 0, 0.521);
+    border-radius: 10%;
+    text-align: center;
+    color: white;
+}
+.testimonios .box-testimonios .card-testimonio .card-img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.testimonios .box-testimonios .card-testimonio .card-img .imagen1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 10px;
+}
+
+.testimonios .box-testimonios .card-testimonio .card-img .imagen2{
+    position: absolute;
+    width:40%;
+    max-height: 150px;
+    border-radius:10px 50% ;
+    bottom: -20px;
+    right: 0;
+    border: solid rgba(128, 128, 128, 0.596);
+}
+.testimonios .box-testimonios .card-testimonio .card-img .testimonio-text h4{
+    text-align: center;
+}
+/* footer */
+.footer{
+    padding: 8px;
+    background-color: rgb(44, 2, 2);
+    text-align: center;
+}
+.footer .footer-text{
+    color: rgba(124, 124, 124, 0.61);
+}
