@@ -27,18 +27,6 @@ ocultar.addEventListener('click', () =>{
     leer_mas.classList.remove('esconder');
     ocultar.style.display = 'none';
 });
-// leer_mas.addEventListener('click', () =>{
-//   container_nosotros.style.display = 'flex';
-//   leer_mas.style.display = 'none';
-//   ocultar.style.display = 'flex';
-
-// });
-// ocultar.addEventListener('click', () =>{
-//     container_nosotros.style.display = 'none';
-//     leer_mas.style.display = 'flex';
-//     ocultar.style.display = 'none';
-// })
-
 
 function validar_datos () {
   let nombre = document.getElementById('nombre').value;
