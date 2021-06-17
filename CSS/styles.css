@@ -263,10 +263,25 @@ html{
     background: rgba(0, 0, 0, 0.671);
 }
 .testimonios .testimonios-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 25px;
     position: relative;
+    text-align: center;
     color: white;
     margin: 30px;
+}
+.testimonios .testimonios-title hr{
+    text-align: center;
+    width: 40%;
+    margin-bottom: 30px;
+}
+.testimonios .testimonios-title p{
+    text-align: center;
+    width: 60%;
+    margin: 20px;
 }
 .testimonios .box-testimonios{
     position: relative;
@@ -283,7 +298,7 @@ html{
     align-items: center;
     width: 20%;
     padding: 10px;
-    background-color: rgba(48, 0, 0, 0.521);
+    background-color: rgba(3, 0, 48, 0.521);
     border-radius: 10%;
     text-align: center;
     color: white;
@@ -310,16 +325,19 @@ html{
     border: solid rgba(128, 128, 128, 0.596);
 }
 
-.testimonios .box-testimonios .card-testimonio .card-img .testimonio-text h4{
+.testimonios .box-testimonios .card-testimonio .testimonio-text h4{
     text-align: center;
+}
+.testimonios .box-testimonios .card-testimonio .testimonio-text p{
+    margin: 10px 0px;
 }
 /* footer */
 .footer{
     position: relative;
     padding: 8px;
-    background-color: rgb(44, 2, 2);
+    background-color: rgba(0, 19, 48, 0.959);
     text-align: center;
 }
 .footer .footer-text{
-    color: rgba(124, 124, 124, 0.61);
+    color: rgba(255, 255, 255, 0.849);
 }
