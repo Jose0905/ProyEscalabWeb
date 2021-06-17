@@ -22,7 +22,6 @@ body{
 /** Menu de navegacion**/
 
 #header{
-    position: relative;
     width: 100%;
 }
 html{
@@ -350,7 +349,10 @@ html{
         margin: 0;
         padding: 0;
     }
-    
+    #header{
+        width: 100%;
+        background: chartreuse;
+    }
     .menu{
         width: 100%;
         height: 150px;
@@ -362,7 +364,16 @@ html{
         background: black;
         transition: all 0.4s linear;
     }
-    
+    .menuAbierto{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
     .menu .logo-box{
         margin-left: 20px;
         width: 70%;
@@ -382,13 +393,35 @@ html{
     .menu .open img{
         width: 80%;
     }
+    
     .menu .close{
         display: none;
+        width: 30%;
+        margin-top: 80px;
+    }
+    .menu .close img{
+        width: 100%;
     }
     .menu .list-container{
+        height: 60%;
+    }
+    .menu .list-container .lists{
+        display: none;
+        padding-right: 0px;
+    }
+    .menu .esconder{
         display: none;
     }
-    
+    .menu .mostrarIcono{
+        display: flex;
+    }
+    .menu .list-container .listaAbierta {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content : space-around;
+        align-items: center;
+    }
     
     /*img - header*/
     #myVideo {
