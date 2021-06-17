@@ -376,7 +376,7 @@ html{
         justify-content: end;
         align-items: flex-end;
         width: 20%;
-        height: 60%;
+        height: 50%;
         margin-right: 15px;
     }
     .menu .open img{
@@ -398,33 +398,7 @@ html{
         min-width: 100%;
         min-height: 100%;
       }
-    .img-header{
-        position: relative;
-        width: 100%;
-    }
     
-    .img-header .welcome{
-        text-align: center;
-        position: relative;
-        width: 100%;
-        background: rgba(0,0,0,0.4);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .img-header .welcome h1{
-        margin-top: 60px;
-        font-size: 50px;
-        color: #ffff;
-        font-weight: 200;
-    
-    }
-    .img-header .welcome h3{
-        font-size: 30px;
-        color: #ffff;
-        font-weight: 200;
-    }
     .img-header .welcome hr{
         width: 80%;
         height: 2px;
@@ -432,44 +406,13 @@ html{
         border: none;
         margin-top: 5px;
     }
-    .img-header .welcome p{
-        font-size: 20px;
-        color: #fff;
-        margin-top: 20px;
-    }
-    .img-header .welcome  button{
-        width: 350px;
-        height: 40px;
-        background: none;
-        border-radius: 24px;
-        border: solid 3px;
-        outline: none;
-        font-size: 22px;
-        color: white;
-        text-align: center;
-        margin-top: 20px;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-    .img-header .welcome  button a{
-        color: white;
-        text-decoration: none;
-    }
-    .img-header .welcome > button:hover{
-        border: none;
-        background: #049e9e;
-        -webkit-transform:scale(1.1);
-        transform:scale(1.1)
-    
-    }
-    
     
     /* acerca de nosotros*/
     
     .acerca-de{
         position: relative;
         width: 100%;
-        padding: 90px;
+        padding: 30px;
         background: black;
     }
     .acerca-de h1{
@@ -480,7 +423,7 @@ html{
         margin-bottom: 20px;
     }
     .acerca-de .container-nosotros{
-        width: 80%;
+        width: 90%;
         height: 0px;
         overflow: hidden;
         margin: auto;
@@ -489,7 +432,7 @@ html{
         transition: height 0.3s;
     }
     .mostrar{
-        height: 500px !important;
+        height: 450px !important;
         transition: height 0.3s;
     }
     .esconder{
@@ -497,7 +440,7 @@ html{
         transition: 0.8s;
     }
     .acerca-de .container-nosotros p{
-        text-align: center;
+        text-align: justify;
         font-size: 17px;
         color: white;
         margin: 10px 0px;
@@ -505,45 +448,14 @@ html{
     
     .acerca-de .container-nosotros .img-nosotros{
         width: 100%;
-        height: 350px;
+        height: 120px;
         background: url(../img/imgs/mojito-variedades.jpg);
-        background-position-y: -100px;
+        background-position-y: -180px;
         background-size: cover;
         display: flex;
         justify-content: center;
         margin: 50px 0px;
         border-radius: 10px;
-    }
-    .acerca-de .boton-leer_mas{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .acerca-de .boton-leer_mas button{
-        justify-content: center;
-        align-items: center;
-        width: 120px;
-        height: 40px;
-        background: none;
-        border-radius: 24px;
-        border: solid 3px;
-        outline: none;
-        font-size: 22px;
-        color: white;
-        text-align: center;
-        margin-top: 20px;
-        cursor: pointer;
-        transition:all 0.6s;
-    }
-    .acerca-de  .boton-leer_mas button:hover{
-        border: none;
-        background: #049e9e;
-        -webkit-transform:scale(1.1);
-        transform:scale(1.1)
-    
-    }
-    .acerca-de  .boton-leer_mas #ocultar{
-        display: none;
     }
     
     /*testimonios*/
@@ -556,8 +468,8 @@ html{
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 30px;
+        padding-bottom: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -590,13 +502,14 @@ html{
     }
     .testimonios .testimonios-title p{
         text-align: center;
-        width: 60%;
+        width: 90%;
         margin: 20px;
     }
     .testimonios .box-testimonios{
         position: relative;
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         
@@ -606,7 +519,8 @@ html{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 20%;
+        width: 70%;
+        margin-bottom: 20px;
         padding: 10px;
         background-color: rgba(3, 0, 48, 0.521);
         border-radius: 10%;
