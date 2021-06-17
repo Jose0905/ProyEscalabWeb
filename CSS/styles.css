@@ -70,12 +70,18 @@ body{
 }
 
 /*img - header*/
-
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 .img-header{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(../img/imgs/party.jpg);
+    background: url(../img/imgs/Cocktail.mp4);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -83,7 +89,7 @@ body{
 
 .img-header .welcome{
     text-align: center;
-    position: static;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -148,6 +154,7 @@ body{
 /* acerca de nosotros*/
 
 .acerca-de{
+    position: relative;
     width: 100%;
     padding: 90px;
     background: var(--black);
@@ -186,11 +193,7 @@ body{
     border-radius: 10px;
     cursor: pointer;
     overflow:hidden;
-    transition: 0.8s;
-}
-.acerca-de .icontainer-nosotros .img-nosotros img:hover{
-    -webkit-transform:scale(1.1);
-    transform:scale(1.1)
+    transition: 0.6s;
 }
 .acerca-de .boton-leer_mas{
     width: 100%;
@@ -211,6 +214,7 @@ body{
     text-align: center;
     margin-top: 20px;
     cursor: pointer;
+    transition:all 0.6s;
 }
 .acerca-de  .boton-leer_mas button:hover{
     border: none;
@@ -221,81 +225,16 @@ body{
 }
 .acerca-de  .boton-leer_mas #ocultar{
     display: none;
+   
 }
-/*Nuestros proyectos*/
 
-.our-project{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url(../img/imgs/mojito.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    padding-top: 100px;
-}
-.our-project .deg-background{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.753);
-}
-.our-project .ejeZproject{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.our-project .container-project{
-    width: 90%;
-    margin: auto;
-    padding-top: 100px;
-}
-.our-project .container-project .project-title{
-    border: 2px solid var(--white);
-    padding: 10px;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-}
-.our-project .container-project .project-title h2{
-    font-size: 40px;
-    color: var(--white);
-    font-weight: normal;
-}
-.our-project .container-project .project-title hr{
-    background: var(--white);
-    width: 50%;
-    margin: 10px auto;
-}
-.our-project .container-project .project-img{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 80px;
-    padding-bottom: 100px;
-}
-.our-project .container-project .project-img img{
-    width: calc(30% - 10px);
-    margin: 10px;
-    object-fit: cover;
-    border-radius: 10px;
-    cursor: pointer;
-    overflow:hidden;
-}
-.our-project .container-project .project-img img:hover{
-    -webkit-transform:scale(1.1);
-    transform:scale(1.1)
-}
 /*testimonios*/
 
 .testimonios{
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/imgs/mojito.jpg);
+    background: url(../img/imgs/party.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -367,6 +306,7 @@ body{
 }
 /* footer */
 .footer{
+    position: relative;
     padding: 8px;
     background-color: rgb(44, 2, 2);
     text-align: center;

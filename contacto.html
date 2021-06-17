@@ -38,19 +38,19 @@
                     
                     <form id="formulario">
                         <div class="row">
-                            <input type="text" id="user" name="user" placeholder="Ingresa tu nombre">
+                            <input type="text"   id="nombre" name="user" placeholder="Ingresa tu nombre"  required="">
                         </div>
                         <div class="row">
-                            <input type="number" id="numero" name="numero" placeholder="ingresa tu número de telefono">
+                            <input type="number" id="numero" name="numero" placeholder="ingresa tu número de telefono" required="">
                         </div>
                         <div class="row">
-                            <input type="email" id="email" name="email" placeholder="Ingresa tu correo electronico">
+                            <input type="email" id="email" name="email" placeholder="Ingresa tu correo electronico" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
                         </div>
                         <div class="row">
-                            <textarea name="mensaje" id="mensaje" placeholder="Dejanos un mensaje"></textarea>
+                            <textarea name="mensaje" id="mensaje" placeholder="Dejanos un mensaje" required=""></textarea>
                         </div>
 
-                        <div class="send"><button>Enviar</button></div>
+                        <div class="send" ><button onclick="validar_datos()">Enviar</button></div>
 
                         <div class="mensaje-form">
                             <p>Escribenos un mensaje, te responderemos a la brevedad.</p>
