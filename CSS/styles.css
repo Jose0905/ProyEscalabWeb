@@ -365,18 +365,22 @@ html{
     
     .menu .logo-box{
         margin-left: 20px;
+        width: 70%;
     }
     .menu .logo-box .Logotipo{
-        height: 100%;
+        width: 80%;
         cursor: pointer;
     }
     .menu .open{
         display: flex;
+        justify-content: end;
+        align-items: flex-end;
         width: 20%;
-        margin-right: 30px;
+        height: 60%;
+        margin-right: 15px;
     }
     .menu .open img{
-        width: 100%;
+        width: 80%;
     }
     .menu .close{
         display: none;
