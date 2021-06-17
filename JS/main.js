@@ -70,11 +70,11 @@ var container_nosotros = document.querySelector('.container-nosotros');
 var leer_mas = document.querySelector('#leer-mas');
 var ocultar = document.querySelector('#ocultar');
 
-// leer_mas.addEventListener('click', () =>{
-//     container_nosotros.classList.add('mostrar');
-//     leer_mas.classList.add('esconder');
-//     ocultar.style.display = 'flex';
-// });
+leer_mas.addEventListener('click', () =>{
+    container_nosotros.classList.add('mostrar');
+    leer_mas.classList.add('esconder');
+    ocultar.style.display = 'flex';
+});
 ocultar.addEventListener('click', () =>{
     container_nosotros.classList.remove('mostrar');
     leer_mas.classList.remove('esconder');

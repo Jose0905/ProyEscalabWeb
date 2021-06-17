@@ -49,6 +49,7 @@ function esconder(){
   }
 }
 
+
 open.addEventListener('click', () => {
   open.classList.add('esconder');
   nav.classList.add('menuAbierto');
