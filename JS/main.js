@@ -18,19 +18,29 @@ var leer_mas = document.querySelector('#leer-mas');
 var ocultar = document.querySelector('#ocultar');
 
 leer_mas.addEventListener('click', () =>{
-    container_nosotros.style.display = 'flex';
-    container_nosotros.style.transition = 'all 0.6s';
-    leer_mas.style.display = 'none';
+    container_nosotros.classList.add('mostrar');
+    leer_mas.classList.add('esconder');
     ocultar.style.display = 'flex';
-})
+});
 ocultar.addEventListener('click', () =>{
-    container_nosotros.style.display = 'none';
-    leer_mas.style.display = 'flex';
+    container_nosotros.classList.remove('mostrar');
+    leer_mas.classList.remove('esconder');
     ocultar.style.display = 'none';
-})
+});
+// leer_mas.addEventListener('click', () =>{
+//   container_nosotros.style.display = 'flex';
+//   leer_mas.style.display = 'none';
+//   ocultar.style.display = 'flex';
+
+// });
+// ocultar.addEventListener('click', () =>{
+//     container_nosotros.style.display = 'none';
+//     leer_mas.style.display = 'flex';
+//     ocultar.style.display = 'none';
+// })
+
 
 function validar_datos () {
-  let datos = [];
   let nombre = document.getElementById('nombre').value;
   let email = document.getElementById('email').value;
   let numero = document.getElementById('numero').value;
@@ -38,6 +48,7 @@ function validar_datos () {
 
   
   if(nombre != '' && email != '' &&  numero != '' && mensaje != ''){
-    alert('Gracias por contactarnos, te responederemos a la brevedad')
+    alert('Gracias por contactarnos, te responederemos a la brevedad');
   } 
+
 }

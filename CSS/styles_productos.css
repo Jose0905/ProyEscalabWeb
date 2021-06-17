@@ -142,88 +142,9 @@ body{
 
 }
 
-
-/* acerca de nosotros*/
-
-.acerca-de{
-    width: 100%;
-    padding: 90px;
-    background: var(--black);
-}
-.acerca-de h1{
-    font-size: 50px;
-    font-weight: 400;
-    color: var(--white);
-    text-align: center;
-    margin-bottom: 20px;
-}
-.acerca-de .info-container{
-    width: 80%;
-    margin: auto;
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-}
-.acerca-de .info-container p{
-    text-align: center;
-    font-size: 17px;
-    color: var(--white);
-    margin: 10px 0px;
-}
-
-.acerca-de .info-container .about-gallery{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 50px 0px;
-}
-.acerca-de .info-container .about-gallery img{
-    width: calc(33.33% - 10px);
-    height: 300px;
-    object-fit: cover;
-    margin: 10px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    overflow:hidden;
-    transition: 0.8s;
-}
-.acerca-de .info-container .about-gallery img:hover{
-    -webkit-transform:scale(1.1);
-    transform:scale(1.1)
-}
-.acerca-de .about-more{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.acerca-de .about-more button{
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 40px;
-    background: none;
-    border-radius: 24px;
-    border: solid 3px;
-    outline: none;
-    font-size: 22px;
-    color: var(--white);
-    text-align: center;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.acerca-de  .about-more button:hover{
-    border: none;
-    background: var(--flour);
-    -webkit-transform:scale(1.1);
-    transform:scale(1.1)
-
-}
-.acerca-de  .about-more #ocultar{
-    display: none;
-}
 /*Nuestros proyectos*/
 
-.our-project{
+.nuestros_roductos{
     position: relative;
     width: 100%;
     height: 100%;
@@ -233,7 +154,7 @@ body{
     background-size: cover;
     padding-top: 100px;
 }
-.our-project .deg-background{
+.nuestros_roductos .deg-background{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -241,34 +162,64 @@ body{
     height: 100%;
     background: rgba(0, 0, 0, 0.541);
 }
-.our-project .ejeZproject{
+
+.nuestros_roductos .container-project{
     position: relative;
-    width: 100%;
-    height: 100%;
-}
-.our-project .container-project{
     width: 90%;
     margin: auto;
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
 }
-.our-project .container-project .project-title{
+.nuestros_roductos .container-project .project-title{
     border: 2px solid var(--white);
     padding: 10px;
     text-align: center;
     width: 50%;
     margin: auto;
 }
-.our-project .container-project .project-title h2{
+.nuestros_roductos .container-project .project-title h2{
     font-size: 40px;
     color: var(--white);
     font-weight: normal;
 }
-.our-project .container-project .project-title hr{
+.nuestros_roductos .container-project .project-title hr{
     background: var(--white);
     width: 50%;
     margin: 10px auto;
 }
-.our-project .container-project .project-img{
+.nuestros_roductos .container-project .nuestros_productos_img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.nuestros_roductos .container-project .nuestros_productos_img .producto-img{
+    display:inline-block;
+    position:relative;
+    width: 20%;
+    margin: 5px;
+}
+.nuestros_roductos .container-project .nuestros_productos_img .producto-img > div {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:10px;
+    margin:0;
+    color: white;
+}
+.nuestros_roductos .container-project .nuestros_productos_img .producto-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.nuestros_roductos .container-project .nuestros_productos_img .producto-img img:hover{
+    opacity: 0.07;
+    transition: 0.7s;
+}
+/* .nuestros_roductos .container-project .project-img{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -276,18 +227,20 @@ body{
     margin-top: 80px;
     padding-bottom: 100px;
 }
-.our-project .container-project .project-img img{
+.nuestros_roductos .container-project .project-img img{
     width: 20%;
     margin: 10px;
     object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
     overflow:hidden;
+    transition: 0.6s;
 }
-.our-project .container-project .project-img img:hover{
+.nuestros_roductos .container-project .project-img img:hover{
     -webkit-transform:scale(1.1);
-    transform:scale(1.1)
-}
+    transform:scale(1.1);
+    opacity: 0.7;
+} */
 /* footer */
 .footer{
     padding: 8px;

@@ -25,7 +25,9 @@ body{
     position: relative;
     width: 100%;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .menu{
     position:  fixed;
     top: 0;
@@ -36,7 +38,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 9999;
-    background: var(--black);
+    background: black;
     transition: all 0.4s linear;
 }
 
@@ -60,13 +62,14 @@ body{
     text-decoration: none;
     margin: 0px 10px;
     padding: 10px;
-    color: var(--white);
+    color: white;
     border-radius: 24px;
     font-size: 16px;
+    transition: 0.2s;
 }
 .menu .list-container .lists li a:hover{
-    color: var(--flour);
-    border-bottom: solid 3px var(--flour);
+    color: #049e9e;
+    border-bottom: solid 3px #049e9e;
 }
 
 /*img - header*/
@@ -132,7 +135,7 @@ body{
     border: solid 3px;
     outline: none;
     font-size: 22px;
-    color: var(--white);
+    color: white;
     text-align: center;
     margin-top: 20px;
     cursor: pointer;
@@ -144,7 +147,7 @@ body{
 }
 .img-header .welcome > button:hover{
     border: none;
-    background: var(--flour);
+    background: #049e9e;
     -webkit-transform:scale(1.1);
     transform:scale(1.1)
 
@@ -157,43 +160,49 @@ body{
     position: relative;
     width: 100%;
     padding: 90px;
-    background: var(--black);
+    background: black;
 }
 .acerca-de h1{
     font-size: 50px;
     font-weight: 400;
-    color: var(--white);
+    color: white;
     text-align: center;
     margin-bottom: 20px;
 }
 .acerca-de .container-nosotros{
     width: 80%;
+    height: 0px;
+    overflow: hidden;
     margin: auto;
-    display: none;
     justify-content: center;
     flex-direction: column;
+    transition: height 0.3s;
+}
+.mostrar{
+    height: 500px !important;
+    transition: height 0.3s;
+}
+.esconder{
+    display: none;
+    transition: 0.8s;
 }
 .acerca-de .container-nosotros p{
     text-align: center;
     font-size: 17px;
-    color: var(--white);
+    color: white;
     margin: 10px 0px;
 }
 
 .acerca-de .container-nosotros .img-nosotros{
     width: 100%;
+    height: 350px;
+    background: url(../img/imgs/mojito-variedades.jpg);
+    background-position-y: -100px;
+    background-size: cover;
     display: flex;
     justify-content: center;
     margin: 50px 0px;
-}
-.acerca-de .container-nosotros .img-nosotros img{
-    width: 100%;
-    object-fit: cover;
-    margin: 10px 10px;
     border-radius: 10px;
-    cursor: pointer;
-    overflow:hidden;
-    transition: 0.6s;
 }
 .acerca-de .boton-leer_mas{
     width: 100%;
@@ -210,7 +219,7 @@ body{
     border: solid 3px;
     outline: none;
     font-size: 22px;
-    color: var(--white);
+    color: white;
     text-align: center;
     margin-top: 20px;
     cursor: pointer;
@@ -218,14 +227,13 @@ body{
 }
 .acerca-de  .boton-leer_mas button:hover{
     border: none;
-    background: var(--flour);
+    background: #049e9e;
     -webkit-transform:scale(1.1);
     transform:scale(1.1)
 
 }
 .acerca-de  .boton-leer_mas #ocultar{
     display: none;
-   
 }
 
 /*testimonios*/
@@ -301,6 +309,7 @@ body{
     right: 0;
     border: solid rgba(128, 128, 128, 0.596);
 }
+
 .testimonios .box-testimonios .card-testimonio .card-img .testimonio-text h4{
     text-align: center;
 }
