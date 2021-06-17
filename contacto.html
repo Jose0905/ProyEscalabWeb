@@ -13,17 +13,23 @@
 
     <!--Menu de navegacion-->
     <header id ="header">
-        <nav class="menu">
-            <div class="logo-box">
+        <nav class="menu" id="menu">
+            <div class="logo-box" id="logo">
                 <a href="index.html"> <img src="img/Logotipo/logo01.jpg" class="Logotipo"> </a>
             </div>
-            <div class="list-container">
+            <div class="open" id="open">
+                <img src="img/imgs/open.png" alt="">
+            </div>
+            <div class="close" id="close" onclick="">
+                <img src="img/imgs/close.png" alt="">
+            </div>
+            <div class="list-container" >
                 <ul class="lists">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="index.html#nosotros">Nosotros</a></li>
-                    <li><a href="index.html#testimonios">Testimonios</a></li>
+                    <li><a href="index.html#nosotros" id="lista1">Nosotros</a></li>
+                    <li><a href="index.html#testimonios" id="lista2">Testimonios</a></li>
                     <li><a href="productos.html">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,7 +38,7 @@
             <div class="welcome">
                 <h1>Contactate con nosotros</h1>
                 <hr>
-                <p>Estamos para resolver cualquier duda o iconveniete que tenags</p>
+                <p>Estamos para resolver cualquier duda o inquietud que tengas</p>
                 <div class="formulario-content">
                     <h2 class="titulo">Formulario de contacto</h2>
                     
@@ -53,7 +59,7 @@
                         <div class="send" ><button onclick="validar_datos()">Enviar</button></div>
 
                         <div class="mensaje-form">
-                            <p>Escribenos un mensaje, te responderemos a la brevedad.</p>
+                            <p>Dejanos tu mensaje, te responderemos a la brevedad.</p>
                         </div>
                     </form>
         </div>

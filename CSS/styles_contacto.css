@@ -48,7 +48,12 @@ body{
     width: 160px;
     cursor: pointer;
 }
-
+.menu .open{
+    display: none;
+}
+.menu .close{
+    display: none;
+}
 .menu .list-container .lists{
     display: flex;
     padding-right: 50px;
@@ -74,7 +79,6 @@ body{
 .img-header{
     position: relative;
     width: 100%;
-    height: 100vh;
     background: url(../img/imgs/baso.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -87,7 +91,6 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     background: rgba(0, 0, 0, 0.479);
     display: flex;
     justify-content: center;
@@ -182,4 +185,117 @@ body{
 }
 .footer .footer-text{
     color: rgba(124, 124, 124, 0.61);
+}
+@media (max-width: 900px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu{
+        width: 100%;
+        height: 150px;
+        position: fixed;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        background: black;
+        transition: all 0.4s linear;
+    }
+    .menuAbierto{
+        width: 100%;
+        height: 100% ;
+        position: fixed;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu .logo-box{
+        margin-left: 20px;
+        width: 70%;
+    }
+    .menu .logo-box .Logotipo{
+        width: 80%;
+        cursor: pointer;
+    }
+    .menu .open{
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        width: 20%;
+        height: 50%;
+        margin-right: 15px;
+    }
+    .menu .open img{
+        width: 80%;
+    }
+    
+    .menu .close{
+        display: none;
+        width: 30%;
+        margin-top: 80px;
+    }
+    .menu .close img{
+        width: 100%;
+    }
+    .menu .list-container{
+        height: 60%;
+    }
+    .menu .list-container .lists{
+        display: none;
+        padding-right: 0px;
+    }
+    .menu .esconder{
+        display: none;
+    }
+    .menu .mostrarIcono{
+        display: flex;
+    }
+    .menu .list-container .listaAbierta {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content : space-around;
+        align-items: center;
+    }
+    /*img - header*/
+    .img-header .welcome{
+        padding: 30px;
+    }
+    .img-header .welcome h1{
+        width: 90%;
+        margin-top: 150px;
+        font-size: 45px;
+        font-weight: 500;
+        color: #ffff;
+    }
+    .img-header .welcome hr{
+        width: 90%;
+    }
+   /* contacto */
+   .formulario-content{
+       width: 100%;
+   }
+   .formulario-content .titulo{
+       font-size: 35px;
+   }
+   .formulario-content #formulario{
+       width: 80%;
+       margin: auto;
+   }
+   .row input, textarea{
+       width: 250px;
+   }
+   .mensaje-form p{
+       width: 100%;
+   }
 }
